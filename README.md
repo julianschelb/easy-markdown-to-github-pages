@@ -11,17 +11,17 @@ _Group members: Name 1, Name 2, Name 3_
 
 ## Setup The Report Template
 
-1. **Fork the Repository:** Begin by creating a copy of this repository for your own use. Click the "Fork" button at the top right corner of this page to do this.
+Follow this steps to set up your project report:
 
-2. **Configure GitHub Pages:** Navigate to "Settings" -> "Pages" in your newly forked repository. Under the "Branch" section, change from "None" to "main" or "master", depending on your default branch, and then click "Save".
+1. **Fork the Repository:** Begin by creating a copy of this repository for your own use. Click the `Fork` button at the top right corner of this page to do this.
 
-3. **Customize Configuration:** Modify the `_config.yml` file within your repository to personalize your site. Update the `title:` to reflect the name of your site and adjust the `description:` to provide a brief summary.
+2. **Configure GitHub Pages:** Navigate to `Settings` -> `Pages` in your newly forked repository. Under the `Branch` section, change from `None` to `master` and then click `Save`.
 
-4. **Content Creation:** Start building your site by modifying the `README.md` (which serves as the home page) and by adding new Markdown files for additional pages. Use the standard [GitHub Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting. Refer to `example.md` in the repository for an example. **Important:** Ensure to prepend your new `.md` files with the header `--- layout: default ---`, as shown at the beginning of `example.md`.
+3. **Customize Configuration:** Modify the `_config.yml` file within your repository to personalize your site. Update the `title:` to reflect the title of your project and adjust the `description:` to provide a brief summary.
 
-5. **Update Site Navigation:** Incorporate your new Markdown files into the website’s navigation by editing the `_config.yml` file. Under `navigation:`, add each new page with `- title:` for the page name and `url:` linked to the corresponding `.md` file. Be sure to remove or update the navigation entries related to any example or template content you replace or remove.
+4. **Content Creation:** Start writing your report by modifying the `README.md`. You can also add new Markdown files for additional pages by modifying the `_config.yml` file. Use the standard [GitHub Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting. 
 
-6. **Access Your Site:** Return to "Settings" -> "Pages" in your repository to find the URL to your live site. It typically takes a few minutes for GitHub Pages to build and publish your site after updates.
+5. **Access Your Site:** Return to `Settings` -> `Pages` in your repository to find the URL to your live site. It typically takes a few minutes for GitHub Pages to build and publish your site after updates. The URL to access your live site follows this schema: `https://<<username>>.github.io/<<repository_name>>/`
 
 
 ## Introduction
