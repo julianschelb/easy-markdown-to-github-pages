@@ -2,8 +2,6 @@
 
 ## Usage
 
-## Setup Guide for GitHub Pages Using ADA Template
-
 1. **Fork the Repository**
    - Begin by creating a copy of this repository for your own use. Click the "Fork" button at the top right corner of this page to do this.
 
