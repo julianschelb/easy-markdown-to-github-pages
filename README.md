@@ -1,5 +1,5 @@
 
-# Document Analysis: Project Report Template
+## Document Analysis: Project Report Template
 
 > This repository serves as a template for your project reports as part of the Document Analysis lecture. To set up your project report as a webpage using GitHub Pages, simply follow the steps outlined in the next chapter.
 >
