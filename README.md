@@ -1,33 +1,27 @@
 
-# DocAna Project Report Template
+# Document Analysis: Project Report Template
 
 _Group members: Name 1, Name 2, Name 3_
 
->>>
-To get started with your own project report, you can either fork or clone this repository. Use this Markdown file as the template for your project report. Add all your code, such as Python scripts and Jupyter notebooks, to the `code` folder. [Here](https://docs.gitlab.com/ee/user/markdown.html) you can read about how to format Markdown documents.
+> This repository serves as a template for your project reports as part of the Document Analysis lecture. To set up your project report as a webpage using GitHub Pages, simply follow the steps outlined in the next chapter.
+>
+>**Some Organizational Details:** Get creative with your project ideas! Just make sure they relate to Natural Language Processing and incorporate this specified dataset: [Link to data](https://huggingface.co/datasets/webis/tldr-17), [Link to paper](https://aclanthology.org/W17-4508.pdf). Submissions should be made in teams of 2-3 students. Each team is expected to create a blog-style project website, using GitHub Pages, to present their findings. Additionally, teams will deliver a lightning talk during the final lecture to discuss their project. Add all your code, such as Python scripts and Jupyter notebooks, to the `code` folder. Use markdown files for your project report. [Here](https://docs.gitlab.com/ee/user/markdown.html) you can read about how to format Markdown documents. 
+>
+>Have fun working on your project! 🥳
 
- Have fun working on your project! 🥳
->>>
+## Setup The Report Template
 
-## Setup Guide for GitHub Pages Using ADA Template
+1. **Fork the Repository:** Begin by creating a copy of this repository for your own use. Click the "Fork" button at the top right corner of this page to do this.
 
-1. **Fork the Repository**
-   - Begin by creating a copy of this repository for your own use. Click the "Fork" button at the top right corner of this page to do this.
+2. **Configure GitHub Pages:** Navigate to "Settings" -> "Pages" in your newly forked repository. Under the "Branch" section, change from "None" to "main" or "master", depending on your default branch, and then click "Save".
 
-2. **Configure GitHub Pages**
-   - Navigate to "Settings" -> "Pages" in your newly forked repository. Under the "Branch" section, change from "None" to "main" or "master", depending on your default branch, and then click "Save".
+3. **Customize Configuration:** Modify the `_config.yml` file within your repository to personalize your site. Update the `title:` to reflect the name of your site and adjust the `description:` to provide a brief summary.
 
-3. **Customize Configuration**
-   - Modify the `_config.yml` file within your repository to personalize your site. Update the `title:` to reflect the name of your site and adjust the `description:` to provide a brief summary.
+4. **Content Creation:** Start building your site by modifying the `README.md` (which serves as the home page) and by adding new Markdown files for additional pages. Use the standard [GitHub Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting. Refer to `example.md` in the repository for an example. **Important:** Ensure to prepend your new `.md` files with the header `--- layout: default ---`, as shown at the beginning of `example.md`.
 
-4. **Content Creation**
-   - Start building your site by modifying the `README.md` (which serves as the home page) and by adding new Markdown files for additional pages. Use the standard [GitHub Markdown syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for formatting. Refer to `example.md` in the repository for an example. **Important:** Ensure to prepend your new `.md` files with the header `--- layout: default ---`, as shown at the beginning of `example.md`.
+5. **Update Site Navigation:** Incorporate your new Markdown files into the website’s navigation by editing the `_config.yml` file. Under `navigation:`, add each new page with `- title:` for the page name and `url:` linked to the corresponding `.md` file. Be sure to remove or update the navigation entries related to any example or template content you replace or remove.
 
-5. **Update Site Navigation**
-   - Incorporate your new Markdown files into the website’s navigation by editing the `_config.yml` file. Under `navigation:`, add each new page with `- title:` for the page name and `url:` linked to the corresponding `.md` file. Be sure to remove or update the navigation entries related to any example or template content you replace or remove.
-
-6. **Access Your Site**
-   - Return to "Settings" -> "Pages" in your repository to find the URL to your live site. It typically takes a few minutes for GitHub Pages to build and publish your site after updates.
+6. **Access Your Site:** Return to "Settings" -> "Pages" in your repository to find the URL to your live site. It typically takes a few minutes for GitHub Pages to build and publish your site after updates.
 
 
 ## Introduction
