@@ -1,3 +1,4 @@
+show_downloads: True
 plugins:
   - jekyll-relative-links
 relative_links:
