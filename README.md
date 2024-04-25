@@ -1,6 +1,15 @@
-# Easy Markdown to Github Pages
 
-## Usage
+# DocAna Project Report Template
+
+_Group members: Name 1, Name 2, Name 3_
+
+>>>
+To get started with your own project report, you can either fork or clone this repository. Use this Markdown file as the template for your project report. Add all your code, such as Python scripts and Jupyter notebooks, to the `code` folder. [Here](https://docs.gitlab.com/ee/user/markdown.html) you can read about how to format Markdown documents.
+
+ Have fun working on your project! 🥳
+>>>
+
+## Setup Guide for GitHub Pages Using ADA Template
 
 1. **Fork the Repository**
    - Begin by creating a copy of this repository for your own use. Click the "Fork" button at the top right corner of this page to do this.
@@ -20,97 +29,70 @@
 6. **Access Your Site**
    - Return to "Settings" -> "Pages" in your repository to find the URL to your live site. It typically takes a few minutes for GitHub Pages to build and publish your site after updates.
 
+
 ## Introduction
 
-This little guide demonstrates how to turn any [Github](http://github.com) repository with a bunch of [Markdown](https://en.wikipedia.org/wiki/Markdown) files into a simple website using [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+Begin by providing context for the project and provide a summary of related work or studies that have addressed similar problems. 
 
-* You don't need to use the command line or anything other than your browser.
-* It doesn't require any knowledge in Jekyll.
-* It's completely compatible with any bunch of markdown files you already have in any existing repository without any modification to those files. That includes the basic `README.md` almost all repositories contain.
-* The markdown files will remain just as readable and usable in Github than in your website.
+### Research Question
 
-In fact this guide uses the same configuration and can be read both in Github and in Github Pages, at your preference:
+Clearly describe the primary question or problem the project aims to address.
 
-* [Here is the link to the Github version](https://github.com/nicolas-van/easy-markdown-to-github-pages)
-* [Here is the link to the Github Pages version](https://nicolas-van.github.io/easy-markdown-to-github-pages/)
+### Related Work
 
-## Step by step instructions
+Review existing literature or previous studies that are relevant to the project's focus.
 
-### Determine the repository where you want to activate Github Pages
+## Dataset
 
-You can of course create a new repository if you want.
+Provide a description of the dataset used, including its sources, size, features, and why it is specifically suited for addressing the research question.
 
-### Create the `_config.yml` file
+## Experiments
 
-That file should be created on the root of your repository. Here is some content to copy-paste in it:
+### Setup 
 
-```yaml
-plugins:
-  - jekyll-relative-links
-relative_links:
-  enabled: true
-  collections: true
-include:
-  - CONTRIBUTING.md
-  - README.md
-  - LICENSE.md
-  - COPYING.md
-  - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
-  - ISSUE_TEMPLATE.md
-  - PULL_REQUEST_TEMPLATE.md
+Outline the tools, software, and hardware environment, and configurations used for conducting the experiments. Include instructions on how to install the necessary dependencies.
+
+Ensure the Python version and dependencies are is clearly documented. Provide instructions on how to re-create your environemnt, for example: 
+
+```bash
+conda create --name myenv python=<version>
+conda activate myenv
 ```
 
-It's basically just a few tuning of Github Pages' default configuration to have a better handling of Markdown files.
+Include a `requirements.txt` file in your project repository. This file should list all the Python libraries and their versions needed to run the project. Provide instructions on how to install these dependencies using pip, for example:
 
-### Activate Github Pages in your repository configuration
+```bash
+pip install -r requirements.txt
+```
 
-On the Github page of your project go into `Settings > Options > Github Pages`:
+### Run Experiments
 
-![](./printscreen1.png)
+Describe the experimental procedure in a way that allows for reproduction of the results, including specific steps, processes involved, and any variables controlled during the experiments. Include detailed instructions on how to execute the experiments. Specify the exact file or script that should be run, along with the command to execute it. For example:
 
-In the `Source` option, select `master branch` then `Save`:
+```bash
+python run_experiments.py
+```
 
-![](./printscreen2.png)
+### Preprocessing Steps
 
-You must also choose a theme:
+Detail any data cleaning, normalization, or transformation processes applied to prepare the dataset, including rationale for the chosen methods.
 
-![](./printscreen3.png)
+### Model Training
 
-That's it! Now you can just use the link provided by Github to access your website:
+Explain the methodologies and algorithms used for training the models. Include parameter settings, training protocols, and any steps taken to ensure the validity of the models.
 
-![](./printscreen4.png)
+## Results and Discussion
 
-## Usage guide
+Present the findings of the experiments, including visual or statistical evidence. Discuss how these results address the research question and relate to the hypotheses and literature cited.
 
-* Any markdown file in your repository will display in your Github Pages website. You just have to use the same path to access it and replace the `.md` extension by `.html`.
-* To make links between your Markdown files just use a relative path to the other Markdown file. The configuration you copy pasted in your `_config.yml` provides a plugin to convert those URLs. So your Markdown files will have correct links both in Github and Github Pages.
-* The index page of your website can be a `index.md` file or a `README.md` file. If both exists the `index.md` file has priority.
-* You should be able to use any [Github Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Conclusion
 
-## Known differences between Github and Github Pages
+Summarize the key outcomes of the project, reflect on the research findings, and state the final conclusions drawn from the study.
 
-* No automatic links with Github Pages. The Github Markdown renderer can automatically detect a simple copy-pasted link and make it a clickable link. Github Pages doesn't propose a feature to reproduce that behavior, so you'll have to braces your links with the `[]()` syntax.
+## References
 
-## Recipes
+List all academic and professional sources cited in the report in an appropriate citation format.
 
-Since the purpose of this guide is to demonstrate how to publish multiple Markdown files as a website but I don't have much more to say I will propose to you some delicious recipes instead:
+## Appendix
 
-* [Escalivada](./recipes/Escalivada.md)
-* [Gazpacho](./recipes/Gazpacho.md)
-* [Pasta all'amatriciana](./recipes/Pasta_all_amatriciana.md)
-
-## Other Github Pages related projects
-
-I'm a fan of Github Pages for the possibilities it offers to anyone to publish a website for free. I have multiple projects that could be of interest if that's your case too:
-
-* [Bootstrap 4 Github Pages](https://nicolas-van.github.io/bootstrap-4-github-pages/)
-* [Parcel Github Pages Boilerplate](https://github.com/nicolas-van/parcel-github-pages-boilerplate)
-
-## Contributing
-
-See the [Contribution Guide](./CONTRIBUTING.md).
-
-## License
-
-See the [License File](./LICENSE.md).
+If needed, include supplementary material such additional graphs that support the report’s content but are too extensive to include in the main text.
