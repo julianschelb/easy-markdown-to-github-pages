@@ -1,5 +1,5 @@
-title: ADA Template Website
-description: A template website for ADA
+title: Document Analysis Semester Project
+description: A template website for your semester project.
 show_downloads: True
 plugins:
   - jekyll-relative-links
